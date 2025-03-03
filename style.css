@@ -161,18 +161,17 @@ span.tooltip:focus > span {
 span.tooltip span {
   display: none;
   position: absolute;
+  width: 200px;
   bottom: 100%;
   left: 50%;
-  transform: translateX(-50%);
+  margin-left: -100px;
   border-radius: 5px;
-  min-width: 200px;
   background-color: rgb(63, 63, 63);
   color: white;
   font-size: 0.6;
   line-height: 1;
   padding: 15px;
   z-index: 0;
-
 }
 
 /* styling for tooltip bubble arrow */
@@ -181,7 +180,6 @@ span.tooltip span::after {
   position: absolute;
   top: 100%;
   left: 50%;
-  transform: translateX(-50%);
   border-width: 7px;
   border-style: solid; 
   border-color: darkgray transparent transparent transparent;
